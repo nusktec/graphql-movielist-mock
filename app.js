@@ -37,5 +37,5 @@ app.use('/movies', graphqlHTTP({
     rootValue: root,
     graphiql: true,
 }));
-app.listen(8080);
+app.listen(process.env.PORT || 3000);
 console.log('Running a GraphQL API server at http://localhost:3000/movies');
